@@ -1,0 +1,10 @@
+{
+  "user": {
+    "pipeline_id": 1, "stage_order": { "12": 5, "14": 8 },
+    "value_floors_eur": { "strategic": 250000, "mid": 40000 },
+    "strategic_segment_values": ["Public Sector"],
+    "field_map": { "deal": { "economic_buyer": "EB", "decision_process": "DP", "identify_pain": "IP", "account_intel": "AI" }, "org": { "segment": "SEG" } }
+  },
+  "deal": { "id": 101, "title": "State of Verona — Regional Rollout", "value": 4000000, "currency": "EUR", "acv": 4000000, "arr": 0, "mrr": 0, "stage_id": 14, "person_id": null, "org_id": 9, "status": "open", "is_archived": false, "custom_fields": { "EB": null, "DP": null, "IP": null, "AI": null } },
+  "org": { "id": 9, "name": "State of Verona", "people_count": 0, "custom_fields": { "SEG": "Public Sector" } }
+}

@@ -1,0 +1,10 @@
+{
+  "user": {
+    "pipeline_id": 1, "stage_order": { "12": 5 },
+    "value_floors_eur": { "strategic": 250000, "mid": 40000 },
+    "strategic_segment_values": ["Public Sector"],
+    "field_map": { "deal": { "economic_buyer": "EB", "decision_process": "DP", "identify_pain": "IP", "account_intel": "AI" }, "org": { "segment": "SEG" } }
+  },
+  "deal": { "id": 202, "title": "Bright Fields Ltd", "value": 18000, "currency": "EUR", "acv": 18000, "arr": 0, "mrr": 0, "stage_id": 12, "person_id": 55, "org_id": 8, "status": "open", "is_archived": false, "custom_fields": { "EB": null, "DP": null, "IP": "manual reporting", "AI": null } },
+  "org": { "id": 8, "name": "Bright Fields Ltd", "people_count": 2, "custom_fields": { "SEG": "SMB" } }
+}
