@@ -40,3 +40,12 @@ test('missing items are ordered by weight desc', () => {
   assert.equal(r.missing[0].key, 'economic_buyer'); // weight 3
   assert.ok(r.score < 40);
 });
+
+test('an unknown contact is excluded from the score, not counted missing', () => {
+  const deal = { value_eur: 300000, identify_pain: 'x', economic_buyer: 'e', decision_process: 'd', account_intel: 'a', has_contact_person: false };
+  const org = { segment: 'Public Sector', people_count: null };
+  const r = evaluateHygiene(deal, org, 'strategic', cfg, all);
+  assert.ok(!r.missing.some(m => m.key === 'contact_person'));
+  assert.ok(!r.present.some(m => m.key === 'contact_person'));
+  assert.equal(r.score, 100);
+});

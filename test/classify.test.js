@@ -38,3 +38,8 @@ test('no usable value falls back to smb and reports it', () => {
   assert.equal(r.basis, 'no_value');
   assert.ok(r.uncertainty.some(u => u.code === 'value_unusable'));
 });
+
+test('segment match ignores case and surrounding whitespace', () => {
+  const r = classifyMotion({ segment: '  public sector ' }, { value_eur: 5000 }, rubric);
+  assert.equal(r.motion, 'strategic');
+});

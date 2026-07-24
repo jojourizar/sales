@@ -32,3 +32,9 @@ test('closed or non-strategic deals are never critical', () => {
   const gaps = { economic_buyer: null, decision_process: null, identify_pain: null, account_intel: null, has_contact_person: false };
   assert.equal(evaluateCommittee(gaps, { people_count: 0 }, { motion: 'smb', stage_order: 8, advanced_order: 8, available: allAvailable }).critical, false);
 });
+
+test('an unknown stage (null order) is never critical', () => {
+  const gaps = { economic_buyer: null, decision_process: null, identify_pain: null, account_intel: null, has_contact_person: false };
+  const r = evaluateCommittee(gaps, { people_count: 0 }, { motion: 'strategic', stage_order: null, advanced_order: 8, available: { economic_buyer: true, decision_process: true, identify_pain: true, account_intel: true } });
+  assert.equal(r.critical, false);
+});
