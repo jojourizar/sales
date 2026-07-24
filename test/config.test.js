@@ -40,3 +40,13 @@ test('CONCEPTS lists every optional mappable concept', () => {
     new Set(['economic_buyer', 'decision_process', 'identify_pain', 'account_intel', 'org_segment'])
   );
 });
+
+test('resolveConfig rejects null, missing, or partial value floors', () => {
+  const base = { pipeline_id: 1, stage_order: {}, strategic_segment_values: [], field_map: { deal: {}, org: {} } };
+  assert.throws(() => resolveConfig(defaults, { ...base, value_floors_eur: { strategic: null, mid: null } }), /setup/i);
+  assert.throws(() => resolveConfig(defaults, { ...base }), /setup/i); // missing entirely
+  assert.throws(() => resolveConfig(defaults, { ...base, value_floors_eur: { mid: 40000 } }), /setup/i); // partial
+  assert.throws(() => resolveConfig(defaults, { ...base, value_floors_eur: { strategic: 10000, mid: 40000 } }), /setup/i); // strategic < mid
+  // valid passes
+  assert.doesNotThrow(() => resolveConfig(defaults, { ...base, value_floors_eur: { strategic: 250000, mid: 40000 } }));
+});
