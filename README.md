@@ -8,10 +8,16 @@ It corrects the most common sales error in both directions: running an enterpris
 The Pipedrive MCP gives Claude access to your data. This skill gives Claude a consistent, calibrated method over that data: the same deal always gets the same verdict, grounded in a proven sales framework, with a report a CEO and an account executive read the same way every time.
 
 ## Install
-1. Download this repo into your Claude Code skills folder:
-   - macOS/Linux: `~/.claude/skills/`
-   - Windows: `%USERPROFILE%\.claude\skills\`
-   The result should be `.../.claude/skills/deal-motion-router/SKILL.md`.
+1. Clone the repo straight into your Claude Code skills folder, as a folder named `deal-motion-router`:
+   - macOS/Linux:
+     ```
+     git clone https://github.com/jojourizar/sales.git ~/.claude/skills/deal-motion-router
+     ```
+   - Windows:
+     ```
+     git clone https://github.com/jojourizar/sales.git %USERPROFILE%\.claude\skills\deal-motion-router
+     ```
+   The result should be `.../.claude/skills/deal-motion-router/SKILL.md`. (The repo is named `sales`; the target folder above gives the skill its own clean name. Any folder name works, since the skill registers by its `SKILL.md` name.)
 2. Restart Claude Code.
 3. Run setup, once: say `run setup for deal motion router`. It reads your Pipedrive fields and configures itself to your instance in one conversation.
 4. Then: `audit the deals that passed discovery this month`.
