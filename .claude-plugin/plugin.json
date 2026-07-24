@@ -1,0 +1,7 @@
+{
+  "name": "deal-motion-router",
+  "version": "1.0.0",
+  "description": "Audit how each Pipedrive deal should be worked by sales motion, and how ready it is to close. Read-only.",
+  "author": "Josué Urizar",
+  "license": "MIT"
+}

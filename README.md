@@ -1,47 +1,33 @@
 # Deal Motion Router
 
-Skill de Claude Code que audita cómo trabajar cada cuenta de LAYERS según su motion comercial (Estratégico, Mid-Market o SMB), leyendo Pipedrive en solo lectura.
+A Claude Code skill that reads your Pipedrive (read-only) and tells your sales team, for every account: whether to work it as Enterprise, Mid-Market or SMB, whether the buying committee is mapped, how your touches compare to what a deal that size needs, and how ready the account is to close.
 
-El problema que resuelve: tratar a una small/medium business igual que a una enterprise. No es un error de precio, es un error de motion. Un deal de gobierno y una usina regional pueden cerrar por cifras parecidas y necesitar formas de vender completamente distintas: distinto comité, distinta cadencia, distintos materiales, distinta asignación de recursos.
+It corrects the most common sales error in both directions: running an enterprise motion on a small deal, and running a light motion on a committee sale.
 
-## Qué necesitas
-- Claude Code instalado.
-- El MCP de Pipedrive conectado en modo read-only.
-- Node.js 18 o superior (el mismo que ya usa el MCP).
+## Why it is different from asking Claude directly
+The Pipedrive MCP gives Claude access to your data. This skill gives Claude a consistent, calibrated method over that data: the same deal always gets the same verdict, grounded in a proven sales framework, with a report a CEO and an account executive read the same way every time.
 
-No hay dependencias que instalar. La skill no ejecuta `npm install`.
+## Install
+1. Download this repo into your Claude Code skills folder:
+   - macOS/Linux: `~/.claude/skills/`
+   - Windows: `%USERPROFILE%\.claude\skills\`
+   The result should be `.../.claude/skills/deal-motion-router/SKILL.md`.
+2. Restart Claude Code.
+3. Run setup, once: say `run setup for deal motion router`. It reads your Pipedrive fields and configures itself to your instance in one conversation.
+4. Then: `audit the deals that passed discovery this month`.
 
-## Instalación (piloto, por zip)
-1. Descomprime la carpeta `deal-motion-router` dentro de `~/.claude/skills/`.
-2. Reinicia Claude Code.
-3. Pide: "audita el deal de <nombre de cuenta>".
+## Requirements
+- Claude Code.
+- The Pipedrive MCP connected (read-only is enough). Works with `@ckalima/pipedrive-mcp-server`.
+- Node.js 18 or higher (the same one your MCP uses).
 
-## Qué te devuelve
-Un audit por cuenta con seis piezas:
-1. Veredicto de motion, con las razones que lo justifican.
-2. Mapa del comité de compra, con los huecos marcados.
-3. Benchmark de cadencia de toques para ese motion.
-4. Checklist de materiales a preparar y para quién.
-5. Checklist de cobertura del comité.
-6. Guía de asignación de recursos.
+No dependencies to install. The skill never writes to your CRM.
 
-Antes de todo eso, si el analizador no pudo determinar algo (moneda no soportada, etapa desconocida, organización sin vincular, TIER no reconocido), lo dice primero. El instrumento prefiere admitir lo que no sabe a dar un juicio seguro y equivocado.
+## What it produces
+A per-account report: the motion verdict, a buying-committee map with the gaps marked, your touches vs the benchmark for that size, a readiness score from 0 to 100, and what to fill to raise your probability of closing. Anything the analyzer cannot determine, it says, instead of guessing.
 
-## Cómo clasifica
-La clasificación se ancla en campos que ya existen en el CRM:
-1. Base: el valor de vida del deal en euros contra los umbrales de la rúbrica. Si el deal no tiene importe utilizable (divisa sin cambio, o valor cero), se infiere por hectáreas y facturación, y el audit avisa.
-2. Government, banca y aseguradoras suben siempre a Estratégico, con independencia del ticket: son compra por comité.
-3. Una organización TIER 0 (Internacional) sube siempre a Estratégico: es una multinacional y se vende por comité. TIER 1, 2 y 3 no mueven el motion, porque ese campo mide alcance geográfico, no complejidad de compra.
-4. Las subidas nunca bajan el motion: se queda el más alto de los tres.
+## Tests
+From the skill folder: `node --test`. No Pipedrive needed.
 
-## Pruebas de la lógica
-Desde la carpeta de la skill: `node --test`. No requiere Pipedrive ni conexión.
-
-## Configuración
-- `config/rubric.json`: tipos de cambio, umbrales de valor, subidas por TIER, segmentos estratégicos, techo de hectáreas plausibles. **Este es el archivo que se toca para recalibrar.**
-- `config/field-map.json`: las claves de los campos de Pipedrive de esta instancia. Solo cambia si cambia la instancia de Pipedrive.
-
-Los tests de `test/config.test.js` validan que la configuración sea coherente, así que una recalibración con un error se detecta al correr `node --test`.
-
-## Alcance
-v1: clasificación y audit por cuenta. El roll-up trimestral de cartera es v1.5.
+## License
+MIT. Built by Josué Urizar.
