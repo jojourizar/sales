@@ -1,25 +1,25 @@
-# Playbook motion SMB / TRANSACCIONAL (productor local, consultora pequeña)
+# Playbook: SMB / TRANSACTIONAL motion
 
-Cuentas TIER 3, valor bajo, ciclo corto. Decisión de 1 a 2 personas. Aquí el error caro es lo contrario: sobreinvertir recursos de comité en una venta que se cierra en una o dos conversaciones.
+Small accounts, low value, short cycle. Decision by 1 or 2 people. The expensive mistake here is the opposite: over-investing committee resources in a sale that closes in one or two conversations.
 
-## Comité de compra esperado
-- Un único decisor (el propietario o gerente) que a la vez es usuario.
-- A lo sumo un segundo par de ojos técnico.
+## Buying committee you should have mapped
+- A single decision maker (owner or manager) who is also the user.
+- At most a second technical set of eyes.
 
-## Benchmark de cadencia
-- Primer contacto tras discovery: mismo día o 24 horas (el interés es perecedero).
-- Cadencia: 3 a 4 toques, resolución rápida.
-- Objetivo: propuesta y cierre en pocas semanas.
+## Cadence benchmark
+- First touch after discovery: same day or within 24 hours (interest is perishable).
+- 3 to 4 touches, fast resolution.
+- Goal: proposal and close within a few weeks.
 
-## Materiales a preparar
-- Propuesta simple y directa con precio claro.
-- Demo corta y estandarizada, sin personalización costosa.
-- Autoservicio y material reutilizable donde sea posible.
+## Materials to prepare
+- A simple, direct proposal with clear pricing.
+- A short, standardized demo, no costly customization.
+- Self-serve and reusable material where possible.
 
-## Checklist de cobertura
-- [ ] Decisor único identificado y con contacto directo.
-- [ ] Pain y presupuesto confirmados.
-- [ ] Fecha objetivo de cierre acordada.
+## Coverage checklist
+- [ ] Single decision maker identified and reachable.
+- [ ] Pain and budget confirmed.
+- [ ] Target close date agreed.
 
-## Asignación de recursos
-Prioridad de eficiencia. Minimiza el coste de adquisición: proceso estandarizado, sin preventa dedicada salvo excepción. El SLA de servicio es el más ligero. Reserva el esfuerzo de comité para las cuentas Estratégicas.
+## Resource allocation
+Efficiency priority. Minimize the cost of acquisition: standardized process, no dedicated pre-sales except by exception. The lightest service level. Reserve committee effort for enterprise accounts.

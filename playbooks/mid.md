@@ -1,29 +1,29 @@
-# Playbook motion MID-MARKET (usinas y cooperativas regionales)
+# Playbook: MID-MARKET motion
 
-Cuentas TIER 2, valor intermedio. Comité pequeño (2 a 4 personas), ciclo medio. Equilibrio entre rigor y eficiencia.
+Mid-sized accounts, intermediate value. Small committee of 2 to 4 people, medium cycle. Balance rigor and efficiency.
 
-## Comité de compra esperado
-- Decisor económico (propietario, director general o gerente).
-- Usuario técnico (agrónomo o jefe de campo).
-- A veces un segundo influyente (socio, responsable de operaciones).
+## Buying committee you should have mapped
+- Economic decision maker (owner, general manager or director).
+- Technical user or team lead.
+- Sometimes a second influencer (a partner or head of operations).
 
-## Benchmark de cadencia
-- Primer contacto tras discovery: 48 horas.
-- Multihilo recomendado: 2 personas como mínimo.
-- Cadencia: 5 a 7 toques por trimestre.
-- Ritmo: una reunión cada 2 a 4 semanas.
+## Cadence benchmark
+- First touch after discovery: within 48 hours.
+- Multi-threading recommended: 2 people minimum.
+- 5 to 7 touches per quarter.
+- A meeting every 2 to 4 weeks.
 
-## Materiales a preparar
-- Propuesta con retorno estimado en su cultivo y hectáreas concretas.
-- Demo enfocada al caso de uso principal (predicción de zafra, monitoreo).
-- Prueba/BeHEMAV como acelerador.
-- Referencias de cuentas similares del mismo cultivo o región.
+## Materials to prepare
+- A proposal with estimated return in their context.
+- A demo focused on the primary use case.
+- A pilot as an accelerator.
+- References from similar accounts.
 
-## Checklist de cobertura
-- [ ] Decisor económico identificado.
-- [ ] Pain concreto documentado.
-- [ ] Al menos una persona de contacto activa y un segundo influyente conocido.
-- [ ] Encaje de valor confirmado (hectáreas y cultivo).
+## Coverage checklist
+- [ ] Economic decision maker identified.
+- [ ] Concrete pain documented.
+- [ ] At least one active contact and a known second influencer.
+- [ ] Value fit confirmed.
 
-## Asignación de recursos
-Prioridad media, eficiente. Un AE con soporte puntual de preventa. Evita sobreinvertir en comité extenso que aquí no existe, pero no lo trabajes como transacción pura: hay renovación.
+## Resource allocation
+Medium, efficient priority. One account executive with occasional pre-sales support. Do not over-invest in a committee that does not exist here, but do not treat it as a pure transaction: there is renewal.
