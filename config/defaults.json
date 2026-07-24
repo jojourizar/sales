@@ -1,0 +1,25 @@
+{
+  "fx_to_eur": { "EUR": 1, "USD": 0.92, "BRL": 0.16, "MXN": 0.05, "GBP": 1.17 },
+  "motion_rank": { "smb": 0, "mid": 1, "strategic": 2 },
+  "stage": { "post_discovery_order": 5, "advanced_order": 8 },
+  "hygiene": {
+    "items": {
+      "value":            { "label": "Deal value",        "weights": { "smb": 2, "mid": 2, "strategic": 2 } },
+      "identify_pain":    { "label": "Pain identified",    "weights": { "smb": 2, "mid": 2, "strategic": 2 } },
+      "contact_person":   { "label": "Contact person",     "weights": { "smb": 2, "mid": 2, "strategic": 1 } },
+      "economic_buyer":   { "label": "Economic buyer",     "weights": { "smb": 0, "mid": 1, "strategic": 3 } },
+      "decision_process": { "label": "Decision process",   "weights": { "smb": 0, "mid": 1, "strategic": 3 } },
+      "account_intel":    { "label": "Account intel",      "weights": { "smb": 0, "mid": 1, "strategic": 2 } },
+      "org_segment":      { "label": "Segment",            "weights": { "smb": 1, "mid": 1, "strategic": 2 } }
+    },
+    "grades": [
+      { "min": 90, "grade": "A" }, { "min": 75, "grade": "B" },
+      { "min": 50, "grade": "C" }, { "min": 25, "grade": "D" }, { "min": 0, "grade": "E" }
+    ]
+  },
+  "touch_benchmark": {
+    "smb":       { "quarter_min": 3, "quarter_max": 4,  "multithread_min": 1 },
+    "mid":       { "quarter_min": 5, "quarter_max": 7,  "multithread_min": 2 },
+    "strategic": { "quarter_min": 8, "quarter_max": 12, "multithread_min": 3 }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "pipeline_id": 1,
+  "stage_order": { "10": 1, "11": 2, "12": 5, "13": 6, "14": 8, "15": 9 },
+  "value_floors_eur": { "strategic": 250000, "mid": 40000 },
+  "strategic_segment_values": [],
+  "field_map": {
+    "deal": { "economic_buyer": null, "decision_process": null, "identify_pain": null, "account_intel": null },
+    "org": { "segment": null }
+  }
+}
