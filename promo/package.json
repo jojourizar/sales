@@ -1,0 +1,22 @@
+{
+  "name": "deal-motion-router-promo",
+  "private": true,
+  "scripts": {
+    "fonts": "sh scripts/fonts.sh",
+    "studio": "remotion studio",
+    "render": "remotion render Loop out/loop.mp4 --concurrency=4",
+    "gif": "remotion render Loop out/loop.gif --codec=gif --every-nth-frame=2 --scale=0.5 --concurrency=4",
+    "report": "remotion still Report out/report.png --scale=1"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.529",
+    "@remotion/google-fonts": "^4.0.529",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.529"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.0",
+    "typescript": "5.8.3"
+  }
+}
