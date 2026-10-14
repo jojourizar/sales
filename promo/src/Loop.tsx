@@ -146,7 +146,7 @@ const Thread: React.FC<{endY: number}> = ({endY}) => {
     extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.cubic),
   });
   const d = `M 230 528 C 230 ${endY - 60}, 560 ${endY - 110}, 620 ${endY - 8}`;
-  const len = 520;
+  const len = 640; // longer than the curve, so nothing peeks out before it draws
   return (
     <svg width={W} height={H} style={{position: 'absolute', inset: 0}}>
       <path d={d} fill="none" stroke={C.red} strokeWidth={2} strokeDasharray={len} strokeDashoffset={len * (1 - p)} />
