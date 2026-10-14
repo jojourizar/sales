@@ -44,7 +44,7 @@ The committee map and the readiness score use the fields you mapped during setup
 A per-account report: the motion verdict, a buying-committee map with the gaps marked, your touches vs the benchmark for that size, a readiness score from 0 to 100, and what to fill to raise your probability of closing. Anything the analyzer cannot determine, it says, instead of guessing.
 
 ## Example
-Two real deals audited by the engine, same day, same pipeline. This is the error the tool exists to catch, in both directions.
+Two deals from one real pipeline, same day, anonymized. They live in `test/fixtures/`, so you can run them yourself. This is the error the tool exists to catch, in both directions.
 
 ![The two verdicts, rendered from the engine's own output on the test fixtures](docs/verdicts.png)
 
